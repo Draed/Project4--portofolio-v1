@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family:'Abel', arial, serif; 
+	text-transform: uppercase;
+  background:#313131 url(fond-menu.png) no-repeat top center;
+}
+/* menu de gauche */
+#conteneur-menu2 {
+	height: 150px;
+	width: 220px;
+	padding-top: 20px;
+	margin: 29 0 0 0;
+	background: transparent;
+  float: left;
+}
+
+#conteneur-menu2 ul {
+	padding: 0;
+	margin: 0;
+	margin-left: 0px;
+	float: left;
+}
+
+#conteneur-menu2 ul li {
+	list-style: none;
+	padding: 3px;
+}
+
+#conteneur-menu2 ul li a {
+	text-decoration: none;
+	font-size: 25px;
+	padding: 4px;
+	display: block;
+	color: white;
+	background: transparent;
+	width: 230px;
+	-moz-transition: all .5s; 
+    -webkit-transition: all .5s; 
+    -o-transition: all .5s; 
+    transition: all .5s;
+    line-height: 20px;
+}
+
+
+#conteneur-menu2 ul li a:hover {
+	background: #54B6A8;
+	padding-left: 20px;
+	width: 130px;
+	-moz-transition: all .5s; 
+    -webkit-transition: all .5s; 
+    -o-transition: all .5s; 
+    transition: all .5s;
+}
+
+/* chargement icone */
+
+.loading-wrap {
+  width: 60px; height: 60px;
+  position: absolute;
+  top: 50%; left: 51%;
+  margin: -30px 0 0 -30px;
+  background: #F5FFFA;
+  border-radius: 30px;
+}
+
+.triangle1, .triangle2, .triangle3 {
+  border-width: 0 20px 30px 20px;
+  border-style: solid;
+  border-color: transparent;
+  border-bottom-color: #67cbf0;
+  height: 0; width: 0;
+  position: absolute;
+  left: 12px; top: -10px;
+  animation: rotation ease-in-out 2s infinite;
+}
+
+.triangle2, .triangle3 {
+  content: '';
+  top: 20px; left: 30px;
+  /*animation-delay: 1.1s;*/
+}
+
+.triangle3 {
+  left: -10px;
+  /*animation-delay: 1.2s;*/
+}
+
+@keyframes rotation {
+    0% {transform: rotate(0deg);}
+    20% {transform: rotate(360deg);}
+    100% {transform: rotate(360deg);}
+}
+
+@keyframes fadecolor {
+    0% {border-bottom-color: #eee;}
+    100%{border-bottom-color: #67cbf0;}
+}
+
+#content {
+
+  width: 60%; height: 70%;
+  margin-left: 17%;
+  margin-top: 2%;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 2%;
+  padding-bottom: 5%;
+
+}
+
+/* ======================================================================================== */
+/*  page projet */
+
+#fadeout {
+  margin-bottom: 1%;
+}
+
+.case1 {background: url("projet2.PNG");}
+.case2 {background: url("streaming.PNG");}
+.case3 {background: url("");}
+.case4 {background: url("");}
+.case5 {background: url("");}
+.case6 {background: url("");}
+
+.case1, .case2, .case3, .case4, .case5, .case6{
+  color: transparent;
+  font-size: 15px;
+    padding-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 4%;
+    margin-top: 5%;
+    width: 26%;
+    height: 18%;
+    float: left;
+    box-shadow: 4px 4px 4px #54B6A8;    
+    border-radius: 15%;
+  -moz-transition: all 1.2s; 
+    -webkit-transition: all 1.2s; 
+    -o-transition: all 1.2s; 
+    transition: all 1.2s;
+
+
+
+}
+
+.case1:hover, .case2:hover, .case3:hover, .case4:hover, .case5:hover, .case6:hover {
+  color: black;
+  font-size:20px;
+  text-shadow: 0px 0px 9px black;
+    padding-top: 5%;
+    float: left;
+
+    -webkit-filter: blur(15px);
+    -moz-filter: blur(15px);
+    -ms-filter: blur(15px);
+    -o-filter: blur(15px);
+    filter: blur(15px);
+    
+}
+
+/* ======================================================================================== */
+ /* page redirection4 : sante */
+
+ h1 {
+color: blue;
+}
+
+.header {
+background-color:purple;
+height:100px;
+top:0px;  
+z-index:1;
+border-radius:0px 0px 50px 0px; /* cadre arrondi */
+}
+
+.bande {
+text-align: right;
+background-color: green;
+color:white;
+top:20px;
+z-index:2;
+
+
+}
+
+.whitecadre {
+margin-top:-120px;
+width:600px;
+padding:10px;
+padding-right:30px;
+padding-left:-30px;
+background-color: white;
+border-radius:50px; /* cadre arrondi */
+}
+
+.redcadre {
+color:blue ;
+background-color: white;
+width:auto;
+margin:0px;
+padding:0px;
+border-radius:10px solid red; /* cadre arrondi */
+}
+
+.petit {
+font-size: 10px;
+text-align: left;
+}
+
+.gros {
+font-size: 18px;
+text-align: left;
+}
+
+.fin {
+margin-top:-40px;
+float: right;
+}
+
+.gauche {
+text-align: left;
+}
+
+.Align { 
+  vertical-align:middle;
+}

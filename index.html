@@ -1,0 +1,50 @@
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Anomaly alpha</title>
+		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	 	<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+	 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	 	<script>
+			function redirection1() {		
+		        $("#content").load("acceuil.html");
+		        //document.getElementById("content").innerHTML = "Hi bro";
+		    }
+		    function redirection2() {		
+		        $("#content").load("CV.html");
+		        
+		    }
+		    function redirection3() {		
+		        $("#content").load("Projet.html");
+		        
+		    }
+	 	</script>
+	</head>
+
+	<body>
+		<!-- menu de gauche -->
+		<div id="conteneur-menu2">
+			<ul class="menu">
+				<li><a id="acceuil" onclick="redirection1()">Accueil</a></li>
+				<li><a onclick="redirection2()">Profil</a></li>
+				<li><a onclick="redirection3()">Projets</a></li>
+
+			<!--<li><a href="#">en attente</a></li>
+				<li><a href="#">en attente</a></li>-->
+			</ul>
+			<ul class="icons">
+							<li><a href="https://www.facebook.com/victor.sypowski" >Facebook</a></li>
+							<li><a href="https://github.com/Rain-saphyr">Github</a></li>
+						</ul>
+			
+		</div>
+		<div id="content">
+		<!-- chargement icone -->
+			<div class="loading-wrap">
+		  		<div class="triangle1"></div>
+		  		<div class="triangle2"></div>
+		  		<div class="triangle3"></div>
+			</div>
+		</div>
+	</body>
+</html>

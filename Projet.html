@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Anomaly alpha</title>
+		<link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+	 	<link rel="stylesheet" href="style.css" type="text/css" media="screen"/>
+	 	<script type="text/javascript">
+	 		function redirection4() {		
+		        $("#zone").load("sante.html");
+		        $("#fadeout").show(1000);
+		    }
+
+		    function redirection5() {		
+		        $("#zone").load("streaming.html");
+		        $("#fadeout").show(1000);
+		    }
+		    $("#fadeout").hide(500);
+	 	</script>
+	</head>
+  
+	<body>
+		<div id="fadeout" onclick="redirection3()"> <img src="retour.png"> get back</div>
+		<div id="zone">
+		<div class="case1" onclick="redirection4()"><center>Sante</center></div> 
+		<div class="case2" onclick="redirection5()"><center>Streaming</center></div>
+		<div class="case3"><center><a href="sante/sante.html" id="couleurlien">Cuisine</a></center></div>
+
+		<div class="case4"><center><a href="sante/sante.html" id="couleurlien">Cuisine</a></center></div>
+		<div class="case5"><center><a href="sante/sante.html" id="couleurlien">Cuisine</a></center></div>
+		<div class="case6"><center><a href="sante/sante.html" id="couleurlien">Cuisine</a></center></div>
+		</div>
+
+
+	</body>
+</html>
